@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+/* generic */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
+}
+
+h2, .project-title, .video-h3 {
+    font-family: 'Lexend Mega', sans-serif;
+    color: #109eff; 
+
+}
+
+.top-nav-item {
+    font-family: 'Lexend Mega', sans-serif;
+    font-size: calc(12x + (14 - 12) * ((100vw - 300px) / (1600 - 300)));
+}
+
+a, .top-nav-link, .social-link, .top-nav-icon {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.5s ease;
+}
+
+a:hover, .top-nav-link:hover, .social-link:hover, .top-nav-icon:hover {
+    color: #f00;
+    text-decoration: none;
+}
+
+/* index.html */
+
+.landing-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.landing-h1 {
+    margin: 0;
+    font-size: calc(48px + (144 - 48) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 900;
+    background: linear-gradient(
+        to right, 
+        dodgerblue, 
+        red
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro {
+    margin: 0;
+    /* background: #eee;
+    border-radius: 2px; */
+    margin-top: 0;
+    padding: 5px;
+    /* text-align: center; */
+    font-family: 'Lexend Mega', sans-serif;
+    font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1600 - 300)));
+    /* color: #00a8a9; */
+    background: linear-gradient(
+        to right, 
+        red, 
+        dodgerblue
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* home.html */
+.header {
+    padding: 50px 0;
+}
+
+.main {
+    padding: 50px 0;
+}
+
+
+
+.blurb-header {
+    font-size: calc(22px + (32 - 22) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 700;
+}
+
+.blurb-text, .about-text {
+    color: #fff;
+    font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
+}
+
+@media (max-width: 767px) {
+    .blurb-text, .about-text {
+        margin: 30px 0;
+    }
+}
+
+.headshot {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #f00;
+}
+
+@media (max-width: 767px) {
+    .headshot {
+        width: 100%;
+        margin: 0 auto;
+        box-shadow: none;
+    }
+}
+
+/* about */
+
+.about-caption, .db-figcaption {
+    color: red;
+    font-style: italic;
+}
+
+.avi {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #64388b;
+}
+
+/* project */
+
+/* daddybug */
+
+.book-link, .work-link {
+    color: #f00;
+}
+
+/* satchwerk tutorials */
+
+/* responsive youtube video embed source: https://www.youtube.com/watch?v=9YffrCViTVk */
+.video{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+}
+
+.video iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* footer */
+
+.footer {
+    padding: 50px 0;
+    width: 100%;
+}
+
+.top-footer, .bottom-footer {
+    margin: 30px 0;
+}
+
+.contact-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.contact-list-item {
+    text-transform: capitalize;
+}
+
+.colophon {
+    color: #fff;
+}

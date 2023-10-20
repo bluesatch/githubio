@@ -104,18 +104,16 @@ class App {
             card.classList.add('col')
 
             card.innerHTML = `
-                    <div class="card text-bg-dark h-100">
+                    <div class="card h-100">
                     ${project.course === 'three.js'? iframe : image}
-                    
-                    
                     <div class="card-body">
                         <h3 class="card-title project-title text-capitalize">${project.name}</h3>
                         <p class="project-description">${project.description}</p>
-                        <div class="card-footer project-links">
-                            ${project.sourceCode != null ? `<a href="${project.sourceCode}"target="_blank" class="card-link project-link source-code text-capitalize">source code</a>` : ''}
-                            
-                            <a href="${project.livePage}" target="_blank" class="card-link project-link live-look text-capitalize">live page</a>
-                        </div>
+                    </div>
+                    <div class="card-footer project-links">
+                        ${project.sourceCode != null ? `<a href="${project.sourceCode}"target="_blank" class="card-link project-link source-code text-capitalize">source code</a>` : ''}
+                        
+                        <a href="${project.livePage}" target="_blank" class="card-link project-link live-look text-capitalize">live page</a>
                     </div>
                 </div>
             `

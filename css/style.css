@@ -1,3 +1,14 @@
+:root {
+    --red: #f00;
+    --blue: #109eff;
+    --headingFont: 'Lexend Mega', sans-serif;
+    --grad: linear-gradient(
+        to right, 
+        dodgerblue, 
+        red
+    );
+}
+
 * {
     box-sizing: border-box;
 }
@@ -9,7 +20,7 @@ html {
 }
 
 body {
-    background: #000;
+    /* background: #000; */
 }
 
 h2, .project-title, .video-h3 {
@@ -25,12 +36,12 @@ h2, .project-title, .video-h3 {
 
 a, .top-nav-link, .social-link, .top-nav-icon {
     text-decoration: none;
-    color: #fff;
+    color: #f00;
     transition: color 0.5s ease;
 }
 
 a:hover, .top-nav-link:hover, .social-link:hover, .top-nav-icon:hover {
-    color: #f00;
+    color: #109eff;
     text-decoration: none;
 }
 
@@ -94,7 +105,7 @@ a:hover, .top-nav-link:hover, .social-link:hover, .top-nav-icon:hover {
 }
 
 .blurb-text, .about-text {
-    color: #fff;
+    /* color: #fff; */
     font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 
@@ -142,6 +153,13 @@ a:hover, .top-nav-link:hover, .social-link:hover, .top-nav-icon:hover {
 }
 
 /* satchwerk tutorials */
+@media (min-width: 768px) {
+
+    .video1-section {
+        margin-bottom: 100px;
+    }
+
+}
 
 /* responsive youtube video embed source: https://www.youtube.com/watch?v=9YffrCViTVk */
 .video{
@@ -179,6 +197,6 @@ a:hover, .top-nav-link:hover, .social-link:hover, .top-nav-icon:hover {
     text-transform: capitalize;
 }
 
-.colophon {
+/* .colophon {
     color: #fff;
-}
+} */

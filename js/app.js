@@ -81,6 +81,15 @@ class App {
                 sourceCode:'https://github.com/bluesatch/nomiya22',
                 livePage: 'https://bluesatch.github.io/nomiya22/',
                 course: 'academy'
+            },
+            {
+                id: 10,
+                name: 'marble race',
+                imgUrl: './images/marblerace.png',
+                description: 'The final project from my Three-js-journey lessons.',
+                sourceCode: null,
+                livePage: 'https://marble-race-murex.vercel.app/',
+                course: 'three.js'
             }
         ]
     }
